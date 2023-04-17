@@ -55,3 +55,23 @@ function labb_register_scripts()
 }
 
 add_action('wp_enqueue_scripts', 'labb_register_scripts');
+
+function labb1_widgets()
+{
+
+    register_sidebar(
+        array(
+            'before_title' => '',
+            'after_title' => '',
+            'before_widget' => '<ul role="navigation">',
+            'after_widget' => '</ul>'
+        ),
+        array(
+            'name' => 'Sidebar Area',
+            'id' => 'sidebar-1',
+            'description' => 'Sidebar Widget'
+        )
+    );
+}
+
+add_action('widgets_init', 'labb1_widgets');
