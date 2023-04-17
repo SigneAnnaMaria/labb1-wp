@@ -22,12 +22,10 @@ get_header();
                 </div>
                 <aside id="secondary" class="col-xs-12 col-md-3 col-md-pull-9">
                     <ul class="side-menu">
-                        <li>
-                            <?php wp_nav_menu(array(
-                                'menu' => 'side-menu',
-                                'theme_location' => 'side-menu'
-                            ));  ?>
-                        </li>
+                        <?php wp_nav_menu(array(
+                            'menu' => 'side-menu',
+                            'theme_location' => 'side-menu'
+                        ));  ?>
                     </ul>
                 </aside>
             </div>

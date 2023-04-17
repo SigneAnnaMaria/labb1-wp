@@ -64,12 +64,22 @@ function labb1_widgets()
             'before_title' => '',
             'after_title' => '',
             'before_widget' => '<ul role="navigation">',
-            'after_widget' => '</ul>'
-        ),
-        array(
+            'after_widget' => '</ul>',
             'name' => 'Sidebar Area',
             'id' => 'sidebar-1',
             'description' => 'Sidebar Widget'
+        )
+    );
+
+    register_sidebar(
+        array(
+            'before_title' => '',
+            'after_title' => '',
+            'before_widget' => '<footer id="footer">',
+            'after_widget' => '</footer>',
+            'name' => 'Footer Area',
+            'id' => 'footer-1',
+            'description' => 'Footer Widget'
         )
     );
 }

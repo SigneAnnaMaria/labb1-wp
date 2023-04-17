@@ -3,7 +3,7 @@
                 <div id="primary" class="col-xs-12 col-md-9">
                     <h1>Blogg</h1>
                     <article>
-                        <?php the_post_thumbnail(); ?>
+                        <?php the_post_thumbnail('medium_large'); ?>
                         <h2 class="title">
                             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                         </h2>
