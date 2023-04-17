@@ -14,6 +14,14 @@ if (have_posts()) {
 }
 ?>
 
+<nav class="navigation pagination">
+	<h2 class="screen-reader-text">Inläggsnavigering</h2>
+	<?php
+	the_posts_pagination();
+	?>
+</nav>
+
+
 <?php
 get_footer();
 ?>
