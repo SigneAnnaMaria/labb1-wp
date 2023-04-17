@@ -1,7 +1,8 @@
+<main>
+    <section>
         <div class="container">
             <div class="row">
                 <div id="primary" class="col-xs-12 col-md-9">
-                    <h1>Blogg</h1>
                     <article>
                         <?php the_post_thumbnail('medium_large'); ?>
                         <h2 class="title">
@@ -20,3 +21,6 @@
                         </ul>
                         <?php the_content(); ?>
                     </article>
+                </div>
+    </section>
+</main>

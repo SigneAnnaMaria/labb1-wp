@@ -63,8 +63,8 @@ function labb1_widgets()
         array(
             'before_title' => '',
             'after_title' => '',
-            'before_widget' => '<ul role="navigation">',
-            'after_widget' => '</ul>',
+            'before_widget' => '<aside id="secondary">',
+            'after_widget' => '</aside>',
             'name' => 'Sidebar Area',
             'id' => 'sidebar-1',
             'description' => 'Sidebar Widget'
