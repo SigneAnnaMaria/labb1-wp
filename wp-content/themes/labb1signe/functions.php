@@ -26,6 +26,17 @@ function labb1_menus()
 add_action('init', 'labb1_menus');
 
 
+//Begränsar blogginlägg till 3 stycken
+function custom_posts_per_page($query)
+{
+    if (!is_admin() && $query->is_main_query()) {
+        $query->set('posts_per_page', 3);
+    }
+}
+add_action('pre_get_posts', 'custom_posts_per_page');
+
+
+
 function labb_register_styles()
 {   //Lägger till styling
     $version = wp_get_theme()->get('Version');
