@@ -11,9 +11,9 @@ function labb1_theme_support()
 
 add_action('after_setup_theme', 'labb1_theme_support');
 
+// Funktion som skapar olika menyer
 function labb1_menus()
 {
-    //Skapar olika menyer
     $locations = array(
         'primary' => "Desktop Top Bar Menu",
         'footer' => "Footer Social Menu",
@@ -23,7 +23,7 @@ function labb1_menus()
         'side-menu-kategorier' => "Side Menu Kategorier"
     );
 
-    //Lägger till meny möjlighet i wp-adminpanel
+    //Lägger till möjligheten att lägga till meny i wp-panel
     register_nav_menus($locations);
 }
 
@@ -48,7 +48,7 @@ function labb_register_scripts()
 
 add_action('wp_enqueue_scripts', 'labb_register_scripts');
 
-//Lägger till dynamiska widgets som finns i backend wp-adminpanel för redigering
+//Lägger till dynamiska widgets som finns i backend wp-panel för redigering
 function labb1_widgets()
 {
 

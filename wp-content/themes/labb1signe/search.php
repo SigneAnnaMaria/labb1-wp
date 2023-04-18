@@ -1,5 +1,7 @@
+<!-- Hämtar innehåll i header.php -->
 <?php get_header() ?>
 
+<!-- Visar sökresultatet för sök i sökfältet och loopar igenom resultaten -->
 <h1><?php echo "Sökresultat för: ";
     the_search_query() ?></h1>
 
@@ -9,4 +11,5 @@
 <?php endwhile;
 endif; ?>
 
+<!-- Hämtar innehåll i header.php -->
 <?php get_footer() ?>

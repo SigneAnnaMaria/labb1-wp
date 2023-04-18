@@ -1,3 +1,4 @@
+<!-- Hämtar inehåll i header.php -->
 <?php
 get_header();
 ?>
@@ -7,8 +8,9 @@ get_header();
         <div class="container">
             <div class="row">
                 <div id="primary" class="col-xs-12 col-md-9">
+                    <!-- Hämtar inläggets titel -->
                     <h1><?php wp_title(''); ?></h1>
-
+                    <!-- Kollar om det finns några inlägg, och loopar igenom dessa  -->
                     <?php
                     if (have_posts()) {
 
@@ -21,9 +23,8 @@ get_header();
                     }
                     ?>
 
-
-
                     <nav class="navigation pagination">
+                        <!-- Lägger till pagination -->
                         <?php echo paginate_links(); ?>
                     </nav>
 
@@ -36,10 +37,12 @@ get_header();
                             <li>
                                 <form id="searchform" class="searchform">
                                     <div>
+                                        <!-- Hämtar sökfält -->
                                         <?php get_search_form(); ?>
                                     </div>
                                 </form>
                                 <?php
+                                // Skapat en widget i functions.php och hämtar dynamic sidebar som går att redigera i wp-panel
                                 dynamic_sidebar('sidebar-1');
                                 ?>
                             </li>
@@ -51,6 +54,7 @@ get_header();
     </section>
 </main>
 
+<!-- Hämtar innehåll i footer.php -->
 <?php
 get_footer();
 ?>

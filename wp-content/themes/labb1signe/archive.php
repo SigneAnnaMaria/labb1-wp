@@ -1,7 +1,9 @@
+<!-- Hämtar innehåll i header.php -->
 <?php
 get_header();
 ?>
 
+<!-- Kollar om det finns några inlägg, och loopar igenom dessa  -->
 <?php
 if (have_posts()) {
 
@@ -13,5 +15,3 @@ if (have_posts()) {
     }
 }
 ?>
-
-

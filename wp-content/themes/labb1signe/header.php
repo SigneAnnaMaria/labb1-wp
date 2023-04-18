@@ -48,6 +48,7 @@ wp_head();
 				<div class="row">
 					<div class="col-xs-12">
 						<ul class="menu">
+							<!-- Lägger till meny som är skapat i wp-panel -->
 							<?php wp_nav_menu(array(
 								'menu' => 'primary',
 								'theme_location' => 'primary'
