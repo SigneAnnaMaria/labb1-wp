@@ -1,5 +1,6 @@
 <?php
 
+// Funktion som lägger till tema support i wp-panel
 function labb1_theme_support()
 {
     //Lägger till dynamisk sid-titel
@@ -27,18 +28,6 @@ function labb1_menus()
 }
 
 add_action('init', 'labb1_menus');
-
-
-//Begränsar blogginlägg till 3 stycken
-function custom_posts_per_page($query)
-{
-    if (!is_admin() && $query->is_main_query()) {
-        $query->set('posts_per_page', 3);
-    }
-}
-add_action('pre_get_posts', 'custom_posts_per_page');
-
-
 
 function labb_register_styles()
 {   //Lägger till styling
