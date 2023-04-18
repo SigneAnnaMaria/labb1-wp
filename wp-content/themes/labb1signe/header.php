@@ -16,14 +16,9 @@ wp_head();
 						<a class="logo" href="<?php echo home_url(); ?>">Labb 1</a>
 					</div>
 					<div class="col-sm-6 hidden-xs">
+						<!-- Lägger till sökfunktion -->
 						<?php get_search_form(); ?>
-						<!-- <form id="searchform" class="searchform">
-							<div>
-								<label class="screen-reader-text">Sök efter:</label>
-								<input type="text" />
-								<input type="submit" value="Sök" />
-							</div>
-						</form> -->
+
 					</div>
 					<div class="col-xs-4 text-right visible-xs">
 						<div class="mobile-menu-wrap">
@@ -36,14 +31,14 @@ wp_head();
 		</header>
 
 		<div class="mobile-search">
-			<?php get_search_form(); ?>
-			<!-- <form id="searchform" class="searchform">
+
+			<form id="searchform" class="searchform">
 				<div>
 					<label class="screen-reader-text">Sök efter:</label>
 					<input type="text" />
 					<input type="submit" value="Sök" />
 				</div>
-			</form> -->
+			</form>
 		</div>
 
 
