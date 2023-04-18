@@ -8,7 +8,7 @@
                         <?php the_post_thumbnail('medium_large'); ?>
                         <h2 class="title">
                             <!-- Hämtar permalänk och titel för nuvarande post -->
-                            <a href="<?php get_permalink(); ?>"><?php the_title(); ?></a>
+                            <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
                         </h2>
                         <ul class="meta">
                             <li>
@@ -27,6 +27,7 @@
                         <!-- Hämtar innehåll från inläggen i wp-panel -->
                         <?php the_content(); ?>
                     </article>
+
 
                 </div>
     </section>
