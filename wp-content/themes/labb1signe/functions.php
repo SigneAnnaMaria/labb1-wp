@@ -17,6 +17,9 @@ function labb1_menus()
         'primary' => "Desktop Top Bar Menu",
         'footer' => "Footer Social Menu",
         'side-menu' => "Sidebar Menu",
+        'side-menu-sidor' => "Side Menu Sidor",
+        'side-menu-arkiv' => "Side Menu Arkiv",
+        'side-menu-kategorier' => "Side Menu Kategorier"
     );
 
     //Lägger till meny möjlighet i wp-adminpanel
@@ -56,6 +59,7 @@ function labb_register_scripts()
 
 add_action('wp_enqueue_scripts', 'labb_register_scripts');
 
+//Lägger till dynamiska widgets som finns i backend wp-adminpanel för redigering
 function labb1_widgets()
 {
 
@@ -63,8 +67,8 @@ function labb1_widgets()
         array(
             'before_title' => '',
             'after_title' => '',
-            'before_widget' => '<aside id="secondary">',
-            'after_widget' => '</aside>',
+            'before_widget' => '',
+            'after_widget' => '',
             'name' => 'Sidebar Area',
             'id' => 'sidebar-1',
             'description' => 'Sidebar Widget'
@@ -75,10 +79,34 @@ function labb1_widgets()
         array(
             'before_title' => '',
             'after_title' => '',
-            'before_widget' => '<footer id="footer">',
-            'after_widget' => '</footer>',
-            'name' => 'Footer Area',
-            'id' => 'footer-1',
+            'before_widget' => '',
+            'after_widget' => '',
+            'name' => 'Footer Area 2',
+            'id' => 'footer-2',
+            'description' => 'Footer Widget'
+        )
+    );
+
+    register_sidebar(
+        array(
+            'before_title' => '',
+            'after_title' => '',
+            'before_widget' => '',
+            'after_widget' => '',
+            'name' => 'Footer Area 3',
+            'id' => 'footer-3',
+            'description' => 'Footer Widget'
+        )
+    );
+
+    register_sidebar(
+        array(
+            'before_title' => '',
+            'after_title' => '',
+            'before_widget' => '',
+            'after_widget' => '',
+            'name' => 'Footer Area 4',
+            'id' => 'footer-4',
             'description' => 'Footer Widget'
         )
     );

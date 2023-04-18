@@ -8,15 +8,6 @@ get_header();
             <div class="row">
                 <div class="col-xs-12 col-md-8 col-md-offset-2">
                     <?php the_content();
-                    // if (have_posts()) {
-
-                    //     while (have_posts()) {
-
-                    //         the_post();
-
-                    //         get_template_part('template-parts/content', 'article');
-                    //     }
-                    // }
                     ?>
                 </div>
             </div>

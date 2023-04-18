@@ -13,6 +13,7 @@ wp_head();
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-8 col-sm-6">
+						<!-- Lägger till hem url länk på titel Labb1 -->
 						<a class="logo" href="<?php echo home_url(); ?>">Labb 1</a>
 					</div>
 					<div class="col-sm-6 hidden-xs">
@@ -46,10 +47,12 @@ wp_head();
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<?php wp_nav_menu(array(
-							'menu' => 'primary',
-							'theme_location' => 'primary'
-						));  ?>
+						<ul class="menu">
+							<?php wp_nav_menu(array(
+								'menu' => 'primary',
+								'theme_location' => 'primary'
+							));  ?>
+						</ul>
 					</div>
 				</div>
 			</div>
