@@ -23,10 +23,8 @@ get_header();
                 <aside id="secondary" class="col-xs-12 col-md-3">
                     <ul class="side-menu">
                         <li>
-                            <?php wp_nav_menu(array(
-                                'menu' => 'side-menu',
-                                'theme_location' => 'side-menu'
-                            ));  ?>
+                            <?php dynamic_sidebar('sidebar-2');
+                            ?>
                         </li>
                     </ul>
                 </aside>

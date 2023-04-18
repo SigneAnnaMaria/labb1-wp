@@ -110,6 +110,19 @@ function labb1_widgets()
             'description' => 'Footer Widget'
         )
     );
+
+    register_sidebar(
+        array(
+            'before_title' => '',
+            'after_title' => '',
+            'before_widget' => '',
+            'after_widget' => '',
+            'name' => 'Sidebar Meny',
+            'id' => 'sidebar-2',
+            'description' => 'Sidebar Meny Widget'
+        )
+    );
 }
+
 
 add_action('widgets_init', 'labb1_widgets');

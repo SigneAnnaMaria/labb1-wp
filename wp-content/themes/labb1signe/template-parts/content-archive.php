@@ -21,6 +21,7 @@
                         </ul>
                         <?php the_content(); ?>
                     </article>
+
                 </div>
     </section>
 </main>
